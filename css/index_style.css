@@ -99,15 +99,21 @@ a:active {
 	}
 }
 
-/*Планшеты*/
-@media (width < 1024px) {
+/*Большие телефоны*/
+@media (width < 990px) {
+	.header {
+		height: 70px;
+	}
+	.main_logo {
+		font-size: 20px;
+	}
+	.main_menu {
+		width: 27px;
+		height: 27px;
+	}
 }
 
-/*Телефоны горизонтально*/
-@media (width < 770px) {
-}
-
-/*Телефоны вертикально*/
+/*Небольшие телефоны*/
 @media (max-width: 450px) {
 	.header {
 		height: 65px;
@@ -147,15 +153,14 @@ a:active {
 	}
 }
 
-/*Планшеты*/
-@media (width < 1024px) {
+/*Большие телефоны*/
+@media (width < 990px) {
+	.banner {
+		height: 610px;
+	}
 }
 
-/*Телефоны горизонтально*/
-@media (width < 770px) {
-}
-
-/*Телефоны вертикально*/
+/*Небольшие телефоны*/
 @media (max-width: 450px) {
 	.banner {
 		height: 500px;
@@ -227,37 +232,61 @@ a:active {
 	}
 }
 
-/**/
+/*Большие мониторы*/
 @media (width > 1160px) {
 	.first_container {
 		width: 50%;
 	}
 }
 
-/*Планшеты*/
-@media (width < 1024px) {
-}
-
-/*Телефоны горизонтально*/
-@media (width < 770px) {
-}
-
-/*Телефоны вертикально*/
-@media (max-width: 450px) {
+/*Большие телефоны*/
+@media (width < 990px) {
 	.first_container {
 		width: 80%;
 		height: 80%;
 		margin: auto;
 	}
 	.first_block {
-		height: 250px;
+		height: 600px;
 	}
 	.first_p {
-		font-size: 18px;
+		margin-top: 4%;
+		font-size: 40px;
 	}
 	.first_h2 {
 		letter-spacing: 0;
+		font-size: 45px;
+	}
+}
+
+/*Средние телефоны*/
+@media (width < 760px) {
+	.first_p {
+		margin-top: 2%;
+		font-size: 30px;
+	}
+	.first_h2 {
+		font-size: 35px;
+	}
+}
+
+/*Небольшие телефоны*/
+@media (max-width: 450px) {
+	.first_container {
+		width: 80%;
+		height: 80%;
+		margin: auto;
+		text-align: center;
+	}
+	.first_block {
+		height: 420px;
+	}
+	.first_p {
 		font-size: 20px;
+	}
+	.first_h2 {
+		letter-spacing: 0;
+		font-size: 25px;
 	}
 }
 
@@ -330,7 +359,14 @@ a:active {
 	margin: auto;
 }
 
-/**/
+/*Ультраширокие мониторы*/
+@media (width > 2200px) {
+	.second_container {
+		width: 40%;
+	}
+}
+
+/*Большие мониторы*/
 @media (width > 1160px) {
 	.second_container {
 		width: 50%;
@@ -354,30 +390,66 @@ a:active {
 	}
 }
 
-/**/
-@media (width > 2200px) {
-	.second_container {
-		width: 40%;
-	}
-}
-
-/*Планшеты*/
-@media (width < 1024px) {
-}
-
-/*Телефоны горизонтально*/
-@media (width < 770px) {
-}
-
-/*Телефоны вертикально*/
-@media (max-width: 450px) {
+/*Большие телефоны*/
+@media (width < 990px) {
 	.second_container {
 		width: 80%;
 		height: 80%;
 		margin: auto;
 	}
 	.second_block {
-		height: 300px;
+		height: 700px;
+	}
+	.second_p {
+		margin-top: 4%;
+		font-size: 40px;
+	}
+	.second_h2 {
+		letter-spacing: 0;
+		font-size: 45px;
+	}
+	.second_button {
+		width: 190px;
+		height: 60px;
+	    padding: 10px;
+		letter-spacing: 1;
+		margin-right: 0;
+	}
+	.second_button_text {
+		font-size: 22px;
+	}
+}
+
+/*Средние телефоны*/
+@media (width < 760px) {
+	.second_p {
+		margin-top: 2%;
+		font-size: 30px;
+	}
+	.second_h2 {
+		font-size: 35px;
+	}
+	.second_button {
+		width: 170px;
+		height: 55px;
+	    padding: 10px;
+		letter-spacing: 1;
+		margin-right: 0;
+	}
+	.second_button_text {
+		font-size: 20px;
+	}
+}
+
+/*Небольшие телефоны*/
+@media (width < 450px) {
+	.second_container {
+		width: 80%;
+		height: 80%;
+		margin: auto;
+	}
+	.second_block {
+		height: 600px;
 	}
 	.second_p {
 		font-size: 18px;
@@ -393,6 +465,9 @@ a:active {
 		letter-spacing: 1;
 		margin-left: auto;
 		margin-right: auto;
+	}
+	.second_button_text {
+		font-size: 15px;
 	}
 }
 
@@ -416,23 +491,36 @@ a:active {
 	margin: auto
 }
 
-/**/
+/*Большие мониторы*/
 @media (width > 1800px) {
-	.footer_container {
-		width: 50%;
-	}
 	.footer {
 		height: 170px;
 	}
+	.footer_container {
+		width: 50%;
+	}
 }
 
-/*Телефоны вертикально*/
-@media (max-width: 450px) {
+/*Большие телефоны*/
+@media (width < 990px) {
 	.footer {
-		height: 200px;
+		height: 280px;
 	}
 	.footer_container {
-		width: 80%;
+		display: block;
+		justify-content: space-between;
+		width: 90%;
+	}
+}
+
+/*Небольшие телефоны*/
+@media (width < 450px) {
+	.footer {
+		height: 420px;
+	}
+	.footer_container {
+		width: 90%;
+		height: 90%;
 	}
 }
 
@@ -493,32 +581,32 @@ a:active {
 	transition: color 0.6s;
 }
 
-/**/
-@media (width < 1000px) {
+/*Большие телефоны*/
+@media (width < 990px) {
 	.footer_links  {
-		flex-direction: column;
-		font-size: 15px;
-	}
-}
-
-/*Планшеты*/
-@media (width < 1024px) {
-}
-
-/*Телефоны горизонтально*/
-@media (width < 770px) {
-}
-
-/*Телефоны вертикально*/
-@media (max-width: 450px) {
-	.footer_links {
-		display: flex;
-		justify-content: space-between;
-		flex-direction: column;
-		margin: 0;
+		width: 100%;
+		flex-direction: row;
+		flex-wrap: nowrap;
+		height: 50%;
 	}
 	.f_link {
-		font-size: 16px;
+		font-size: 20px;
+		margin: auto;
+	}
+}
+
+/*Небольшие телефоны*/
+@media (width < 450px) {
+	.footer_links {
+		display: flex;
+		justify-content: center;
+		flex-direction: column;
+		margin: auto;
+	}
+	.f_link {
+		font-size: 18px;
+		flex-wrap: wrap;
+		text-align: center;
 	}
 }
 
@@ -561,11 +649,6 @@ a:active {
   border-color: transparent;
 }
 
-.footer_gp:click, .footer_vk:hover{
-  background-position: bottom;
-  border-color: transparent;
-}
-
 .footer_gp_text, .footer_vk_text {
 	margin-left: 15px;
 }
@@ -575,23 +658,28 @@ a:active {
 	margin-bottom: auto;
 }
 
-/*Планшеты*/
-@media (width < 1024px) {
+/*Большие телефоны*/
+@media (width < 990px) {
+	.footer_icons  {
+		width: 100%;
+		justify-content: center;
+		flex-direction: row;
+		flex-wrap: wrap;
+
+		height: 50%;
+		margin: auto;
+	}
 }
 
-/*Телефоны горизонтально*/
-@media (width < 770px) {
-}
-
-/*Телефоны вертикально*/
+/*Небольшие телефоны*/
 @media (width < 450px) {
 	.footer_icons  {
-		grid-template-columns: auto;
-  		grid-template-rows: auto auto;
-  		justify-content: center;
+		display: flex;
+		justify-content: space-between;
+		width: 50%;
 	}
 
 	.footer_gp, .footer_vk {
-		font-size: 10px;
+		font-size: 12px;
 	}
 }
