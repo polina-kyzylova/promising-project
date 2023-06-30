@@ -27,6 +27,45 @@
 				<a href="index.html" class="main_logo">Promising <span class="span">Project</span></a>
 				<img src="img/Menu.png" class="main_menu">
 			</nav>
+
+			<div class="burger">
+				<div class="burger_header">
+					<div class="burger_header_container">
+						<img src="img/Menu_burger.png" class="burger_menu">
+					</div>
+				</div>
+
+				<div class="burger_nav">
+					<div class="burger_nav_container">
+						<div class="li_nav" onclick="">
+							<a href="#" id="li_nav_text">О нас</a>
+						</div>
+						<div class="li_nav" onclick="">
+							<a href="#" id="li_nav_text">Контакты</a>
+						</div>
+						<div class="li_nav" onclick="">
+							<a href="#" id="li_nav_text">Наши приложения</a>
+						</div>
+						<div class="li_nav" onclick="">
+							<a href="#" id="li_nav_text">ОБЖейка</a>
+						</div>
+					</div>
+				</div>
+
+				<div class="burger_links">
+					<div class="burger_links_container">
+						<div class="li_link">
+							<img src="img/GP_logo.png" class="burger_gp_logo" width="10%" height="10%" onclick="">
+							<a href="#" class="burger_gp_text">Google Play</a>
+						</div>
+
+						<div class="li_link">
+							<img src="img/VK_logo.png" class="burger_vk_logo" width="10%" height="10%" onclick="">
+							<a href="#" class="burger_vk_text">Вконтакте</a>
+						</div>
+					</div>
+				</div>
+			</div>
 		</header>
 
 		<div class="main_container">
@@ -50,7 +89,7 @@
 					<h2 class="second_h2">
 						О нас
 					</h2>
-					<div class="second_button">
+					<div class="second_button" onclick="">
 						<a href="#" class="second_button_text">Подробнее</a>
 					</div>
 				</div>
@@ -74,17 +113,20 @@
 				</div>
 			
 				<div class="footer_icons">
-					<div class="footer_gp">
-						<img src="img/GP_logo.png" class="footer_vk_logo" width="25%" height="25%">
+					<div class="footer_gp" onclick="">
+						<img src="img/GP_logo.png" class="footer_vk_logo" width="25%" height="25%" onclick="">
 						<a href="#" class="footer_gp_text">Доступно в<br/>Google Play</a>
 					</div>
 
-					<div class="footer_vk">
-						<img src="img/VK_logo.png" class="footer_vk_logo" width="25%" height="25%">
+					<div class="footer_vk" onclick="">
+						<img src="img/VK_logo.png" class="footer_vk_logo" width="25%" height="25%" onclick="">
 						<a href="#" class="footer_vk_text">Сообщество<br/>Вконтакте</a>
 					</div>
 				</div>
 			</div>
 		</footer>
+
+		<script src="https://yastatic.net/jquery/3.3.1/jquery.min.js"></script>
+		<script src="js/script.js"></script>
 	</body>
 </html>
