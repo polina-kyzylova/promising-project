@@ -82,7 +82,8 @@ a:active {
 }
 
 .span {
-	color: #E85529;
+	/*color: #E85529;*/
+	color: #F34E40;
 }	
 
 /*Большие мониторы*/
@@ -175,7 +176,8 @@ a:active {
 .first_block {
 	height: 300px;
 	width: 100%;
-	background-color: #E85529;
+	/*background-color: #E85529;*/
+	background-color: #F34E40;
 	display: flex;
 }
 
@@ -330,7 +332,9 @@ a:active {
 
 .second_button {
 	color: #fff;
-	background-color: #E85529;
+	/*background-color: #E85529;*/
+	background-color: #F34E40;
+
 	width: 150px;
 	height: 50px;
 	border-style: solid;
@@ -349,7 +353,8 @@ a:active {
 
 .second_button:hover {
 	transform: scale(1.1);
-	background-color: #FF6131;
+	/*background-color: #FF6131;*/
+	background-color: #EB6A5F;
 }
 
 .second_button_text {
@@ -507,9 +512,8 @@ a:active {
 		height: 280px;
 	}
 	.footer_container {
-		display: block;
 		justify-content: space-between;
-		width: 90%;
+		width: 80%;
 	}
 }
 
@@ -521,6 +525,9 @@ a:active {
 	.footer_container {
 		width: 90%;
 		height: 90%;
+
+		display: block;
+		justify-content: space-between;
 	}
 }
 
@@ -584,29 +591,33 @@ a:active {
 /*Большие телефоны*/
 @media (width < 990px) {
 	.footer_links  {
-		width: 100%;
-		flex-direction: row;
+		display: flex;
+		flex-direction: column;
+		justify-content: space-around;
 		flex-wrap: nowrap;
-		height: 50%;
+		margin: auto;
+		height: 100%;
 	}
 	.f_link {
 		font-size: 20px;
-		margin: auto;
+		text-align: left;
 	}
 }
 
 /*Небольшие телефоны*/
 @media (width < 450px) {
 	.footer_links {
+		height: 50%;
 		display: flex;
-		justify-content: center;
+		justify-content: space-around;
 		flex-direction: column;
 		margin: auto;
 	}
 	.f_link {
 		font-size: 18px;
-		flex-wrap: wrap;
+		flex-wrap: nowrap;
 		text-align: center;
+		margin: auto;
 	}
 }
 
@@ -661,25 +672,25 @@ a:active {
 /*Большие телефоны*/
 @media (width < 990px) {
 	.footer_icons  {
-		width: 100%;
-		justify-content: center;
-		flex-direction: row;
-		flex-wrap: wrap;
-
-		height: 50%;
-		margin: auto;
+		grid-template-columns: 180px;
+  		grid-template-rows: auto auto;
+		grid-row-gap: 5%;
 	}
 }
 
 /*Небольшие телефоны*/
 @media (width < 450px) {
 	.footer_icons  {
-		display: flex;
-		justify-content: space-between;
-		width: 50%;
+		height: 50%;
+		grid-template-columns: auto;
+  		grid-template-rows: auto auto;
+
+		gap: 15px;
+		margin: auto;
 	}
 
 	.footer_gp, .footer_vk {
 		font-size: 12px;
+		text-align: center;
 	}
 }
